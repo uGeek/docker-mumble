@@ -5,18 +5,19 @@ This repository contains **Dockerfile** of [Mumble](http://wiki.mumble.info/wiki
 
 ## Base Docker Image
 
-- [ubuntu](https://registry.hub.docker.com/_/ubuntu/)
-
+- Alpine
 ## Installation
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/fallendusk/mumble/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull fallendusk/mumble`
+2. Download [automated build](https://registry.hub.docker.com/u/ugeek/murmur/) from public [Docker Hub Registry](https://registry.hub.docker.com/): 
+
+3. Fork `docker pull ugeek/murmur`
 
 ## Usage
 
 To launch it, just type:
 
 ```
-docker run -d -p 64738:64738 fallendusk/mumble
+docker run -d -p 64738:64738 -p 6502:6502 ugeek/murmur:arm
 ```
