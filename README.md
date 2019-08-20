@@ -18,12 +18,24 @@ To launch it, just type:
 
 For ARM:
 ```
-docker run -d --name mumble \
-  -p 64738:64738 -p 6502:6502 \
-  ugeek/mumble:arm
+docker run -d --name mumble -p 64738:64738 -p 6502:6502 ugeek/mumble:arm
 ```
 
-# Config
+## Config
 ```
 docker exec -i -t --user root mumble sh
+```
+
+## Edit your password,...
+```
+vi /config/mumble-server.ini
+```
+
+```
+exit
+```
+
+## Restart Mumble
+```
+docker restart mumble
 ```
