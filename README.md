@@ -10,9 +10,7 @@ This repository contains **Dockerfile** of [Mumble](http://wiki.mumble.info/wiki
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/ugeek/murmur/) from public [Docker Hub Registry](https://registry.hub.docker.com/): 
-
-3. Fork `docker pull ugeek/murmur`
+2. Download [automated build](https://registry.hub.docker.com/u/ugeek/murmur/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull ugeek/murmur`
 
 ## Usage
 
