@@ -24,3 +24,8 @@ docker run -d --name mumble \
   -v $HOME/docker/mumble/config:/config \
   ugeek/mumble:arm
 ```
+
+# Config
+```
+docker exec -i -t mumble sh
+```
