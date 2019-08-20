@@ -20,7 +20,7 @@ For ARM:
 ```
 docker run -d --name mumble \
   -p 64738:64738 -p 6502:6502 \
-  -v $HOME/docker/mumble:/data \
-  -v $HOME/docker/mumble:/config \
+  -v $HOME/docker/mumble/data:/data \
+  -v $HOME/docker/mumble/config:/config \
   ugeek/mumble:arm
 ```
