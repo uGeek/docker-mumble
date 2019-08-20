@@ -27,5 +27,5 @@ docker run -d --name mumble \
 
 # Config
 ```
-docker exec -i -t mumble sh
+docker exec -i -t --user root mumble sh
 ```
