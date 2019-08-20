@@ -10,12 +10,13 @@ This repository contains **Dockerfile** of [Mumble](http://wiki.mumble.info/wiki
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/ugeek/murmur/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull ugeek/murmur`
+2. Download [automated build](https://registry.hub.docker.com/u/ugeek/murmur/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull ugeek/mumble`
 
 ## Usage
 
 To launch it, just type:
 
+For ARM:
 ```
-docker run -d -p 64738:64738 -p 6502:6502 ugeek/murmur:arm
+docker run -d -p 64738:64738 -p 6502:6502 -v $HOME/docker/mumble:/data -v $HOME/docker/mumble:/config ugeek/mumble:arm
 ```
