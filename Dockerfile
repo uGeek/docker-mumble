@@ -1,4 +1,5 @@
-FROM alpine:edge  #3.12
+FROM alpine:edge  
+#last version alpine 3.12
 MAINTAINER angel <ugeekpodcast@gmail.com>
 
 RUN apk update && apk add --no-cache murmur && mkdir /data && mkdir /config && chown murmur /data && chown murmur /config
