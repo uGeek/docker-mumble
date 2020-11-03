@@ -18,11 +18,11 @@ To launch it, just type:
 
 For **ARM**
 ```
-docker run -d --name mumble -p 64738:64738 -p 6502:6502 ugeek/mumble:arm
+docker run -d --name mumble -p 64738:64738  -p 64738:64738/udp ugeek/mumble:arm
 ```
 For **amd64**
 ```
-docker run -d --name mumble -p 64738:64738 -p 6502:6502 ugeek/mumble:amd64
+docker run -d --name mumble -p 64738:64738  -p 64738:64738/udp ugeek/mumble:amd64
 ```
 
 ## Config
